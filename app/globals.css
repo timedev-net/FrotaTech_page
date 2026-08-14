@@ -13,6 +13,6 @@
 @media(max-width:720px){.symbol-image-wrap{width:39px;flex-basis:39px}.symbol-image{width:39px}.mega-image{left:15%;top:21%;width:70%}}
 
 /* Fundos tecnológicos próprios, com camadas de contraste para preservar a leitura. */
-.hero{background-image:linear-gradient(90deg,rgba(255,255,255,.97) 0%,rgba(244,251,253,.93) 36%,rgba(226,245,251,.72) 59%,rgba(5,29,56,.08) 100%),url('/hero-tech-bg.png');background-size:cover;background-position:center;background-attachment:fixed}
-.impact{background-image:linear-gradient(90deg,rgba(3,23,44,.97) 0%,rgba(4,31,58,.92) 47%,rgba(3,25,47,.66) 100%),url('/impact-tech-bg.png');background-size:cover;background-position:center;background-attachment:fixed}
-@media(max-width:720px){.hero{background-position:62% center;background-attachment:scroll;background-image:linear-gradient(180deg,rgba(255,255,255,.97) 0%,rgba(240,250,253,.92) 57%,rgba(220,243,250,.68) 100%),url('/hero-tech-bg.png')}.impact{background-position:65% center;background-attachment:scroll;background-image:linear-gradient(90deg,rgba(3,23,44,.96),rgba(4,31,58,.80)),url('/impact-tech-bg.png')}}
+.hero{background-image:linear-gradient(90deg,rgba(255,255,255,.97) 0%,rgba(244,251,253,.93) 36%,rgba(226,245,251,.72) 59%,rgba(5,29,56,.08) 100%),var(--hero-background);background-size:cover;background-position:center;background-attachment:fixed}
+.impact{background-image:linear-gradient(90deg,rgba(3,23,44,.97) 0%,rgba(4,31,58,.92) 47%,rgba(3,25,47,.66) 100%),var(--impact-background);background-size:cover;background-position:center;background-attachment:fixed}
+@media(max-width:720px){.hero{background-position:62% center;background-attachment:scroll;background-image:linear-gradient(180deg,rgba(255,255,255,.97) 0%,rgba(240,250,253,.92) 57%,rgba(220,243,250,.68) 100%),var(--hero-background)}.impact{background-position:65% center;background-attachment:scroll;background-image:linear-gradient(90deg,rgba(3,23,44,.96),rgba(4,31,58,.80)),var(--impact-background)}}

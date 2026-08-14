@@ -98,6 +98,14 @@ actions tied to the current ChatGPT user. Leave public content anonymous.
 - `npm run validate:artifact`: recheck an existing artifact's manifest and ESM `default.fetch` export
 - `npm run db:generate`: generate Drizzle migrations after schema changes
 
+## GitHub Pages
+
+Pushing to `main` runs `.github/workflows/deploy-pages.yml`, which builds a static
+export and deploys it to GitHub Pages. In the repository, enable **Settings →
+Pages → Build and deployment → Source: GitHub Actions** once. The workflow uses
+the Pages base path automatically, so images work when the site is published as
+a project page (`https://<owner>.github.io/<repository>/`).
+
 Use build and validation commands for targeted diagnosis after a remote failure, not as part of the normal checkpoint path.
 
 The timeout defaults can be overridden for a controlled canary with `SITES_INSTALL_TIMEOUT`, `SITES_INSTALL_KILL_AFTER`, `SITES_BUILD_TIMEOUT`, and `SITES_BUILD_KILL_AFTER`. A timeout fails the command; the helpers never retry an unchanged install or build.
